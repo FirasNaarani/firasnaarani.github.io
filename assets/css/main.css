@@ -1159,7 +1159,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/5.jpg");
+			background-image: url("../../images/4.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1866,6 +1866,32 @@ input, select, textarea {
     /* On smaller screens, decrease text size */
     @media only screen and (max-width: 300px) {
         .text {font-size: 11px}
+    }
+
+    .animate-charcter {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            -225deg,
+            #ffffff 0%,
+            #ff8400 29%,
+            #1371ff 67%,
+            #00ffc8 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        display: inline-block;
+    }
+
+    @keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
     }
 
 /* Footer */
