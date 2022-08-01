@@ -76,3 +76,28 @@ function showSlidesPic2(n) {
     slides[slideIndexPic2-1].style.display = "block";
     dots[slideIndexPic2-1].className += " active";
 }
+
+/** Project 3 */
+let slideIndexPic3 = 1;
+showSlidesPic3(slideIndexPic3);
+
+// Next/previous controls
+function plusSlidesPic3(n) {
+    showSlidesPic3(slideIndexPic3 += n);
+}
+
+function showSlidesPic3(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlidesProj3");
+    let dots = document.getElementsByClassName("dot3");
+    if (n > slides.length) {slideIndexPic3 = 1}
+    if (n < 1) {slideIndexPic3 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndexPic3-1].style.display = "block";
+    dots[slideIndexPic3-1].className += " active";
+}

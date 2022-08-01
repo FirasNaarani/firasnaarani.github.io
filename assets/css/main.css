@@ -783,6 +783,7 @@ input, select, textarea {
 		list-style: none;
 		margin-left: -1rem;
 		padding-left: 0;
+        align-items: center;
 	}
 
 		ul.actions li {
@@ -1713,7 +1714,7 @@ input, select, textarea {
     }
 
     /* Hide the images by default */
-    .mySlidesProject, .mySlidesProj1, .mySlidesProj2 {
+    .mySlidesProject, .mySlidesProj1, .mySlidesProj2, .mySlidesProj3 {
         display: none;
     }
 
