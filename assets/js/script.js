@@ -101,3 +101,25 @@ function showSlidesPic3(n) {
     slides[slideIndexPic3-1].style.display = "block";
     dots[slideIndexPic3-1].className += " active";
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var startDateElement = document.getElementById('start-date');
+    var startDate = new Date("2022-09");
+    
+    // Format the date as "YYYY MMM"
+    var formattedDate = startDate.toLocaleString('default', { month: 'short' }) +' ' + startDate.getFullYear();
+
+    // Set the formatted date as the content of the span element
+    startDateElement.textContent = formattedDate;
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var startDateElement = document.getElementById('end-date');
+    var endDate = new Date("2023-07");
+    
+    // Format the date as "YYYY MMM"
+    var formattedDate = endDate.toLocaleString('default', { month: 'short' }) +' ' + endDate.getFullYear();
+
+    // Set the formatted date as the content of the span element
+    startDateElement.textContent = formattedDate;
+});
