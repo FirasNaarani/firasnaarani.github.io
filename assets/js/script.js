@@ -102,6 +102,31 @@ function showSlidesPic3(n) {
     dots[slideIndexPic3-1].className += " active";
 }
 
+/** Project 4 */
+let slideIndexPic4 = 1;
+showSlidesPic4(slideIndexPic4);
+
+// Next/previous controls
+function plusSlidesPic4(n) {
+    showSlidesPic4(slideIndexPic4 += n);
+}
+
+function showSlidesPic4(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlidesProj4");
+    let dots = document.getElementsByClassName("dot4");
+    if (n > slides.length) {slideIndexPic4 = 1}
+    if (n < 1) {slideIndexPic4 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndexPic4-1].style.display = "block";
+    dots[slideIndexPic4-1].className += " active";
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var startDateElement = document.getElementById('start-date');
     var startDate = new Date("2022-09");
